@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    alacritty # fast GPU accelerate terminal
     tldr   # better manual Reader
     httpie # simple http client
     unar   # extract from rar file, free software replacement of unrar

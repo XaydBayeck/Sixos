@@ -5,7 +5,6 @@
     nushell # My favorite shell powerd by rust!
   ];
 
-  programs.starship.enable = true;
   # programs.starship.zsh = true;
 
   environment.shells = with pkgs; [ fish nushell ];

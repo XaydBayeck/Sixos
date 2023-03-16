@@ -2,12 +2,6 @@
 
 {
   services.xserver = {
-    layout = "us";
-
-    libinput = {
-      enable = true;
-    };
-
     # displayManager.defaultSession = "none+leftwm";
 
     windowManager.leftwm = {

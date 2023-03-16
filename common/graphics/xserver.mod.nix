@@ -6,5 +6,6 @@
     enable = true;
     # use more morden terminal emulaters
     # excludePackages = [ pkgs.xterm ];
+    layout = "us";
   };
 }

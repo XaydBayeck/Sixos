@@ -30,6 +30,7 @@
               inherit system;
               specialArgs = extra-args // { inherit system; inherit packages; };
               modules = [
+                { nixpkgs.overlays = [ (final: prev: self.overlays.packages) ]; }
                 prelude_mod
                 { inherit profileName; }
                 (./profiles + "/${profileName}/configuration.nix")

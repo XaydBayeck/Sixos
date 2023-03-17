@@ -20,6 +20,7 @@
     {
       overlays = [
         (import ./overlays/packages.nix)
+        (import ./overlays/teaks.nix)
       ];
 
       nixosConfigurations =

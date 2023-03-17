@@ -1,4 +1,4 @@
-{ config, lib, pkgs, libX11, libXinerama, ... }:
+{ config, lib, pkgs, nixpkgs, libX11, libXinerama, ... }:
 
 let
   rpathLibs = [ libX11 libXinerama ];

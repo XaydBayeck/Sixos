@@ -18,6 +18,10 @@
     let prelude_mod = { lib, ... }: { options = { profileName = lib.mkOption { type = lib.types.str; }; }; }; in
     let packages = for'' (subDirs ./packages) (x: { "${x}" = import (./packages + "/${x}") pkgs; }); in
     {
+      overlays = {
+        packages = import ./overlays/packages.nix;
+      };
+
       nixosConfigurations =
 
         for'' (subDirs ./profiles) (profileName:

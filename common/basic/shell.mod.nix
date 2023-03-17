@@ -4,9 +4,9 @@
   environment.systemPackages = with pkgs; [
     nushell # My favorite shell powerd by rust!
     # fishPlugins
-    bass   # Run bash scripts
-    puffer # Text Expansions
-    pisces # pisces ☯ 双鱼
+    fishPlugins.bass   # Run bash scripts
+    fishPlugins.puffer # Text Expansions
+    fishPlugins.pisces # pisces ☯ 双鱼
   ];
 
   # programs.starship.zsh = true;

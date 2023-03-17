@@ -14,13 +14,13 @@
     })
   ];
 
-  services.xserver.windowManager.session = singleton {
+  /* services.xserver.windowManager.session = singleton {
       name = "leftwm";
       start = ''
         ${pkgs.leftwm}/bin/leftwm &
         waitPID=$!
       '';
-    };
+    }; */
 
   services.xserver = {
     # displayManager.defaultSession = "none+leftwm";

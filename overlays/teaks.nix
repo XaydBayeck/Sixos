@@ -8,7 +8,7 @@ self: super:
     {
       postInstall = ''
         for p in $out/bin/left*; do
-          patchelf --set-rpath "${lib.makeLibraryPath rpathLibs}" $p
+          patchelf --set-rpath "${super.lib.makeLibraryPath rpathLibs}" $p
         done
       '';
     });

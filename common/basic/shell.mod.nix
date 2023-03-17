@@ -11,4 +11,11 @@
 
   # Greate multi shell prompts powerd by Rust!
   programs.starship.enable = true;
+
+  # fishPlugins
+  environment.systemPackages = with pkgs.fishPlugins; [
+    bass   # Run bash scripts
+    puffer # Text Expansions
+    pisces # pisces ☯ 双鱼
+  ];
 }

@@ -6,7 +6,12 @@
     neovim
   ];
 
-  programs.neovim.defaultEditor = true;
-  programs.neovim.vimAlias = true;
-  programs.neovim.viAlias = true;
+  # programs.neovim.defaultEditor = true;
+  environment.variables.EDITOR = "nvim";
+  # programs.neovim.vimAlias = true;
+  # programs.neovim.viAlias = true;
+  environment.shellAliases = {
+    vi = "nvim";
+    vim = "nvim";
+  };
 }

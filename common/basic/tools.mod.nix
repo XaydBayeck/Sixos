@@ -8,5 +8,10 @@
     flameshot # screen cut
     screenkey # display the key you press
     xorg.xmodmap   # setting and query your modifier keys
+    pcmanfm # powerful file manager
+    gparted 
   ];
+
+  # clipboard manager aim to use with rofi
+  services.greenclip.enable = true;
 }

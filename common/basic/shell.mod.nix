@@ -3,6 +3,10 @@
 {
   environment.systemPackages = with pkgs; [
     nushell # My favorite shell powerd by rust!
+    # fishPlugins
+    bass   # Run bash scripts
+    puffer # Text Expansions
+    pisces # pisces ☯ 双鱼
   ];
 
   # programs.starship.zsh = true;
@@ -11,11 +15,4 @@
 
   # Greate multi shell prompts powerd by Rust!
   programs.starship.enable = true;
-
-  # fishPlugins
-  environment.systemPackages = with pkgs.fishPlugins; [
-    bass   # Run bash scripts
-    puffer # Text Expansions
-    pisces # pisces ☯ 双鱼
-  ];
 }

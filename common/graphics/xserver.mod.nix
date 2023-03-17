@@ -20,6 +20,6 @@
     picom   # window compositor
     trayer  # lightweight systray for UNIX desktop
     # i3lock-color # simple screen locker
-    wired.packages.${config.nixpkgs.hostPlatform}.wired
+    wired.packages.${config.nixpkgs.localSystem.system}.wired
   ];
 }

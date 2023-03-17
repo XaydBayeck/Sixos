@@ -1,15 +1,15 @@
 self: super:
 
-with builtins;
-
-let
-  dirContents = readDir ./teaks;
-
-  genPackage = name: {
-    inherit name;
-    value = import (./teaks + "/${name}") self super;
-  };
-
-  names = attrNames dirContents;
-in
-  listToAttrs (map genPackage names)
+{
+  leftwm = super.leftwm.overridAttrs (oldAttrs:
+    let
+      rpathLibs = oldAttrs.buildInputs;
+    in
+    {
+      postInstall = ''
+        for p in $out/bin/left*; do
+          patchelf --set-rpath "${lib.makeLibraryPath rpathLibs}" $p
+        done
+      '';
+    });
+}

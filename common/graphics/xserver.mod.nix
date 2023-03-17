@@ -17,6 +17,6 @@
     polybar # fashing status bar
     feh     # most simple img viewer also as wallpaper setter
     dmenu   # bacup applications menu
-    # picom # window compositor
+    picom   # window compositor
   ];
 }

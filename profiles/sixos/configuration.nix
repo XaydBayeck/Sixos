@@ -16,6 +16,7 @@
       ../../common/basic
       ../../common/develop
       ../../common/web
+      ../../common/social
       ../../fact/device
       ../../fact/user
       ../../fact/network

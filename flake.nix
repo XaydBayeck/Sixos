@@ -19,7 +19,7 @@
     # let packages = for'' (subDirs ./packages) (x: { "${x}" = import (./packages + "/${x}") pkgs; }); in
     {
       overlays = [
-        (import ./overlays/packages.nix)
+        # (import ./overlays/packages.nix)
         (import ./overlays/teaks.nix)
       ];
 

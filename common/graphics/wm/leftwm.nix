@@ -1,5 +1,8 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, libX11, libXinerama, ... }:
 
+let
+  rpathLibs = [ libX11 libXinerama ];
+in
 {
 
   nixpkgs.overlayers = [
@@ -15,11 +18,11 @@
   ];
 
   /* services.xserver.windowManager.session = singleton {
-      name = "leftwm";
-      start = ''
-        ${pkgs.leftwm}/bin/leftwm &
-        waitPID=$!
-      '';
+    name = "leftwm";
+    start = ''
+    ${pkgs.leftwm}/bin/leftwm &
+    waitPID=$!
+    '';
     }; */
 
   services.xserver = {

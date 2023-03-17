@@ -1,7 +1,7 @@
 self: super:
 
 {
-  leftwm = super.leftwm.overridAttrs (oldAttrs:
+  leftwm = super.leftwm.overrideAttrs (oldAttrs:
     let
       rpathLibs = oldAttrs.buildInputs;
     in

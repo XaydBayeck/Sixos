@@ -1,11 +1,11 @@
-{ config, lib, pkgs, nixpkgs, libX11, libXinerama, ... }:
+{ config, lib, pkgs, libX11, libXinerama, ... }:
 
 let
   rpathLibs = [ libX11 libXinerama ];
 in
 {
 
-  nixpkgs.overlayers = [
+  nixpkgs.overlays = [
     (self: super: {
       leftwm = pkgs.leftwm.overrideAttrs (finalAttrs: previousAttrs: {
         postInstall = ''

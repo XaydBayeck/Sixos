@@ -3,11 +3,11 @@ self: super:
 with builtins;
 
 let
-  dirContents = readDir ./teaks;
+  dirContents = readDir ./packages;
 
   genPackage = name: {
     inherit name;
-    value = import (./teaks + "/${name}") self super;
+    value = self.callPackage (./packages + "/${name}") {};
   };
 
   names = attrNames dirContents;

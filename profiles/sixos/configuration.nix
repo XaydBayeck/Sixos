@@ -19,6 +19,7 @@
       ../../fact/device
       ../../fact/user
       ../../fact/network
+      ../../fact/hardware
     ];
 
   # List packages installed in system profile. To search, run:

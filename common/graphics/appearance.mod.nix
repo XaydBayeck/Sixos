@@ -2,9 +2,9 @@
 
 {
   # make qt applications look similar to GTK ones
-  qt5.enable = true;
-  qt5.platformTheme = "gtk2";
-  qt5.style = "gtk2";
+  qt.enable = true;
+  qt.platformTheme = "gtk2";
+  qt.style = "gtk2";
 
   environment.systemPackages = with pkgs; [
     # papirus-icon-theme

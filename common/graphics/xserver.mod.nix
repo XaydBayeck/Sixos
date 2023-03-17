@@ -17,7 +17,7 @@
     polybar # fashing status bar
     feh     # most simple img viewer also as wallpaper setter
     dmenu   # bacup applications menu
-    picom   # window compositor
+    picom-jonaburg   # window compositor
     trayer  # lightweight systray for UNIX desktop
     # i3lock-color # simple screen locker
     wired.packages.${config.nixpkgs.localSystem.system}.wired

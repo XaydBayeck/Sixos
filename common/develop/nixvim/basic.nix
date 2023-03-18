@@ -3,7 +3,7 @@
 {
   programs.nixvim = {
     # colorscheme
-    colorscheme.nord = {
+    colorschemes.nord = {
       enable = true;
       cursorline_transparent = true;
       italic = true;

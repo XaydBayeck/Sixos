@@ -12,5 +12,5 @@
 
   # Enable automatic login for the user.
   # services.getty.autologinUser = "sid";
-  home-manager.users.sid = import /home/sid/.config/home-manager/home.nix;
+  home-manager.users.sid = import ./home/sid/home.nix;
 }

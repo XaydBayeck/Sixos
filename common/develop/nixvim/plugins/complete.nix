@@ -92,7 +92,7 @@
     cmp-cmdline.enable = true;
     cmp-nvim-lua.enable = true;
     cmp-fish.enable = true;
-    crates.enable = true;
+    crates-nvim.enable = true;
   };
 
   programs.nixvim.autoCmd = [

@@ -1,4 +1,4 @@
-{ config, pkgs, /* home-manager, */ ... }:
+{ config, pkgs, home-manager, ... }:
 
 {
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -12,5 +12,5 @@
 
   # Enable automatic login for the user.
   # services.getty.autologinUser = "sid";
-  # home-manager.users.sid = import ./home/sid/home.nix;
+  home-manager.users.sid = import /home/sid/.config/home-manager/home.nix;
 }

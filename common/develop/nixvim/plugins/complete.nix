@@ -4,7 +4,7 @@
   programs.nixvim.plugins = {
     # TODO: move and config luasnip
     luasnip.enable = true;
-    nvim-cpm = {
+    nvim-cmp = {
       enable = true;
       snippet = {
         expand = "luasnip";

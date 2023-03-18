@@ -2,6 +2,7 @@
 
 {
   programs.nixvim.plugins = {
+    barbar.enable = true;
     startify = {
       enable = true;
       enableSpacial = true;

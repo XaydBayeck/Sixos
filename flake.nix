@@ -7,11 +7,16 @@
     # nixos-cn.url = "github:nixos-cn/flakes";
     # nixos-cn.inputs.nixpkgs.follows = "nixpkgs";
     # nixos-cn.inputs.flake-utils.follows = "flake-utils";
+    # manager user's home settings
+    # home-manager.url = "github:nix-community/home-manager";
+    # home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # lightweight notification daemon
     wired.url = "github:Toqozz/wired-notify";
+    # config neovim by nix
+    nixvim.url = "github:pta2002/nixvim";
   };
 
-  outputs = { self, nixpkgs, flake-utils, wired, ... }@extra-args:
+  outputs = { self, nixpkgs, home-manager, flake-utils, wired, nixvim, ... }@extra-args:
     let system = "x86_64-linux"; in
     let pkgs = nixpkgs.legacyPackages.${system}; in
     let lib = nixpkgs.lib; in
@@ -38,6 +43,11 @@
                 prelude_mod
                 { inherit profileName; }
                 (./profiles + "/${profileName}/configuration.nix")
+                # home-manager.nixosModules.home-manager
+                # {
+                #   home-manager.useGlobalPkgs = true;
+                #   home-manager.useUserPackages = true;
+                # }
               ];
             };
           });

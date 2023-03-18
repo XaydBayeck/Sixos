@@ -20,6 +20,7 @@
     picom-jonaburg   # window compositor
     trayer  # lightweight systray for UNIX desktop
     # i3lock-color # simple screen locker
+    libnotify # send notifications to the desktop
     wired.packages.${config.nixpkgs.localSystem.system}.wired
   ];
 }

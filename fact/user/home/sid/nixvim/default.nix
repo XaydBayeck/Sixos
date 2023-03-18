@@ -1,6 +1,7 @@
 { nixvim ,... }:
 {
   imports = [
+    nixvim.homeManagerModules.nixvim
     ./basic.nix
     ./plugins
     ./keybindings.nix

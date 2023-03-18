@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ./nxivim
+    ./nixvim
   ];
 
   environment.systemPackages = with pkgs; [

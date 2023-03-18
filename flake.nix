@@ -43,7 +43,6 @@
                 prelude_mod
                 { inherit profileName; }
                 (./profiles + "/${profileName}/configuration.nix")
-                nixvim.homeManagerModules.nixvim
                 home-manager.nixosModules.home-manager
                 {
                   home-manager.useGlobalPkgs = true;

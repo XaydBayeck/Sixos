@@ -7,7 +7,7 @@
         enable = true;
         settings = {
           formatting = {
-            command = "nixpkgs-fmt";
+            command = [ "nixpkgs-fmt" ];
           };
         };
       };

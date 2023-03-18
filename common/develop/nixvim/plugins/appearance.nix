@@ -5,7 +5,7 @@
     barbar.enable = true;
     startify = {
       enable = true;
-      enableSpacial = true;
+      enableSpecial = true;
     };
     lualine = {
       enable = true;

@@ -10,7 +10,7 @@
       nixGrammars = true;
       incrementalSelection = {
         enable = true;
-        keymap = {
+        keymaps = {
           initSelection = "<CR>";
           nodeIncremental = "<CR>";
           nodeDecremental = "<BS>";

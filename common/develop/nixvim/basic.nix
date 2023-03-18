@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 
 {
-  programs.nixnvim = {
+  programs.nixvim = {
     # colorscheme
     colorscheme.nord = {
       enable = true;

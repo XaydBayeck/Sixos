@@ -27,7 +27,7 @@
         dockerfile
         dot
         elixir
-        elmerlang
+        erlang
         fennel
         fish
         gdscript

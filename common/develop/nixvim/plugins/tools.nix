@@ -24,7 +24,7 @@
         };
       };
       # TODO
-      todo-comment.enable = true;
+      todo-comments.enable = true;
       # Comment code
       comment-nvim.enable = true;
       # Surround

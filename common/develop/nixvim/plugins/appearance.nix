@@ -13,7 +13,7 @@
       # extensions = [];
     };
   };
-  barbar = {
-    enable = true;
-  };
+  # barbar = {
+  #   enable = true;
+  # };
 }

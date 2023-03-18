@@ -90,8 +90,8 @@
     cmp-buffer.enable = true;
     cmp-path.enable = true;
     cmp-cmdline.enable = true;
-    cmp-nvim-lua = true;
-    cmp-fish = true;
+    cmp-nvim-lua.enable = true;
+    cmp-fish.enable = true;
     crates.enable = true;
   };
 

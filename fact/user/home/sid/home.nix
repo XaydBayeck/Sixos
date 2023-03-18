@@ -1,10 +1,10 @@
 { config, pkgs, nixvim, ... }:
 
 {
-  imports = [
-    nixvim.homeManagerModules.nixvim
-    ./nixvim
-  ];
+  # imports = [
+  #   nixvim.homeManagerModules.nixvim
+  #   ./nixvim
+  # ];
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.

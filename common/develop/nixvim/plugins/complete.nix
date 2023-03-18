@@ -98,9 +98,9 @@
 
   programs.nixvim.autoCmd = [
     {
-      event = "BufRead";
-      pattern = "Cargo.toml";
-      callback = { _raw = ''
+      event = ["BufRead"];
+      pattern = ["Cargo.toml"];
+      callback = { __raw = ''
         function()
           require("cmp").setup.buffer({ sources = {{name = "crates"}} })
         end

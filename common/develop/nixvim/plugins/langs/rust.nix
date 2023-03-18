@@ -2,7 +2,7 @@
 
 {
   programs.nixvim.plugins = {
-    rust-tool = {
+    rust-tools = {
       enable = true;
       inlayHints.parameterHintsPrefix = "::";
     };

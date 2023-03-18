@@ -63,6 +63,7 @@
           colOffset = -3;
           sidePadding = 0;
         };
+        documentation.maxHeight = "math.floor(40 * (40 / vim.o.lines))";
       };
       formatting = {
         fields = [ "kind" "abbr" "menu" ];

@@ -28,7 +28,7 @@
     platformTheme = "gtk";
   };
 
-  home.pointCursor = {
+  home.pointerCursor = {
     package = pkgs.nordzy-cursor-theme;
     gtk.enable = true;
     name = "Nordzy-cursors";

@@ -9,7 +9,7 @@
         sources = { __raw = ''
             {
               require("null_ls").builtins.completion.luasnip,
-              require("null_ls").builtins.completion.spell
+              require("null_ls").builtins.completion.spell,
               require("null_ls").builtins.diagnostics.fish,
             }
           ''; };

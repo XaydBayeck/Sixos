@@ -28,7 +28,7 @@
           modes = [ "i" "s" ];
           action = ''
             function(fallback)
-              let luasnip = require('luasnip')
+              local luasnip = require('luasnip')
               if cmp.visible() then
                 cmp.select_next_item()
               elseif luasnip.expandable() then

@@ -53,6 +53,7 @@
         latex
         llvm
         lua
+        nu
         make
         markdown
         markdown_inline
@@ -78,6 +79,7 @@
         wgsl
         wgsl_bevy
         yaml
+        yuck
         zig
       ];
 

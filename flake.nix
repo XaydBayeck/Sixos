@@ -14,7 +14,7 @@
     wired.url = "github:Toqozz/wired-notify";
     # config neovim by nix
     nixvim.url = "github:pta2002/nixvim";
-    nixvim.inputs.follows = "nixpkgs";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager, flake-utils, wired, nixvim, ... }@inputs:

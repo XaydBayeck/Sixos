@@ -51,6 +51,6 @@
 
     };
     lsp-lines.enable = true;
-    lspind.enable = true;
+    lspkind.enable = true;
   };
 }

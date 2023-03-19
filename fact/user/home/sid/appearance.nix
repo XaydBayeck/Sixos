@@ -1,6 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
+  home.packages = with pkgs; [
+    nordzy-cursor-theme
+    plata-theme
+    tela-icon-theme
+  ];
+
   gtk = with pkgs; {
     enable = true;
     cursorTheme = {
@@ -17,8 +23,16 @@
     };
   };
 
-  qt = with pkgs; {
+  qt = {
     enable = true;
     platformTheme = "gtk";
+  };
+
+  home.pointCursor = {
+    package = pkgs.nordzy-cursor-theme;
+    gtk.enable = true;
+    name = "Nordzy-cursors";
+    x11.enable = true;
+    x11.defaultCursor = "Nordzy-cursors";
   };
 }

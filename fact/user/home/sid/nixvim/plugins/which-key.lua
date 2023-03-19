@@ -1,5 +1,5 @@
 -- nvim-nu settings
-require("nu").setup()
+-- require("nu").setup()
 
 -- https://github.com/folke/which-key.nvim
 

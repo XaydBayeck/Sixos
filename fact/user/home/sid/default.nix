@@ -5,5 +5,6 @@
     nixvim.homeManagerModules.nixvim
     ./basic.nix
     ./nixvim
+    ./appearance.nix
   ];
 }

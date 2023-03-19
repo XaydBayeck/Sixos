@@ -13,7 +13,7 @@
     bottom # morden top
     tree   # files tree view
     ranger # useful tui file manager
-    neofetch # system info report
+    hyfetch # system info report
     parted
   ];
 }

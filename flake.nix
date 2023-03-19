@@ -16,7 +16,7 @@
     nixvim.url = "github:pta2002/nixvim";
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils, wired, nixvim, ... }@extra-args:
+  outputs = { self, nixpkgs, home-manager, flake-utils, wired, nixvim, ... }@inputs:
     let system = "x86_64-linux"; in
     let pkgs = nixpkgs.legacyPackages.${system}; in
     let lib = nixpkgs.lib; in
@@ -37,7 +37,7 @@
             "${profileName}" = lib.nixosSystem rec {
               inherit system;
               # specialArgs = extra-args // { inherit system; inherit packages; };
-              specialArgs = extra-args // { inherit system; };
+              specialArgs = inputs // { inherit system; };
               modules = [
                 { nixpkgs.overlays = self.overlays; }
                 prelude_mod

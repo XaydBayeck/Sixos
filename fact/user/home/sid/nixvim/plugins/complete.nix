@@ -28,6 +28,7 @@
           modes = [ "i" "s" ];
           action = ''
             function(fallback)
+              let luasnip = require('luasnip')
               if cmp.visible() then
                 cmp.select_next_item()
               elseif luasnip.expandable() then
@@ -94,6 +95,7 @@
     cmp-nvim-lua.enable = true;
     cmp-fish.enable = true;
     crates-nvim.enable = true;
+    cmp_luasnip.enable = true;
   };
 
   programs.nixvim.autoCmd = [

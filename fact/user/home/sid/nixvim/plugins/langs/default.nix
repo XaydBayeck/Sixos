@@ -6,6 +6,6 @@
     ./nix.nix
     ./cc.nix
     ./rust.nix
-    # ./nushell.nix
+    ./nushell.nix
   ];
 }

@@ -4,7 +4,7 @@
   programs.nixvim.plugins = {
     treesitter = {
       enable = true;
-      ensureInstalled = [ "c" "rust" "lua" "haskell" "cpp" "html" "javascript" "typescript" "nix" ];
+      ensureInstalled = [ "c" "rust" "lua" "haskell" "cpp" "html" "javascript" "typescript" "nix" "nu" ];
       folding = true;
       indent = true;
 

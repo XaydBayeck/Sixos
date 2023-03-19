@@ -3,6 +3,8 @@
 {
   programs.nixvim.plugins = {
     # TODO: move and config luasnip
+    lspkind.enable = true;
+    lspkind.cmp.enable = true;
     luasnip.enable = true;
     nvim-cmp = {
       enable = true;

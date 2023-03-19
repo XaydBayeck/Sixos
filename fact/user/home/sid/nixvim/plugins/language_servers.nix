@@ -31,7 +31,7 @@
          end)()
       '';
       onAttach = ''
-        require('plugin-config.which-key').lsp_on_attach(client, bufnr)
+        lsp_on_attach(client, bufnr)
         require('illuminate').on_attach(client)
         -- You will likely want to reduce updatetime which affects CursorHold
         -- note: this setting is global and should be set only once

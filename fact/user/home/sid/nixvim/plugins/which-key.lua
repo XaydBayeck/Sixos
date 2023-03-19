@@ -93,8 +93,7 @@ wk.register({
   ["c"] = { name = "Comment" }
 }, { prefix = "g", noremap = true, silent = true })
 
-local export = {}
-export.lsp_on_attach = function(_, bufnr)
+local lsp_on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   local lspmapping = { g = {
@@ -134,4 +133,3 @@ export.lsp_on_attach = function(_, bufnr)
   wk.register(lspmapping.leader, { prefix = "<leader>", buffer = bufnr, noremap = true, silent = true })
 end
 
-return export

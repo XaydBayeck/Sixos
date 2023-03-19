@@ -16,4 +16,9 @@
       name = "Tela Red Dark";
     };
   };
+
+  qt = with pkgs; {
+    enable = true;
+    platformTheme = "gtk";
+  };
 }

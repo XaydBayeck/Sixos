@@ -6,5 +6,6 @@
     ./basic.nix
     ./nixvim
     ./appearance.nix
+    ./graphics.nix
   ];
 }

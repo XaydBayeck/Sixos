@@ -3,7 +3,7 @@
 local wk = require("which-key")
 
 local hop = require("hop")
-hop.setp()
+hop.setup()
 
 local directions = require("hop.hint").HintDirection
 

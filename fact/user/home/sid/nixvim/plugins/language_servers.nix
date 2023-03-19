@@ -22,7 +22,7 @@
               {"🭼", "FloatBorder"},
               {"▏", "FloatBorder"},
         }
-      '';
+      '' + builtins.readFile ./lsp-on-attach.lua;
       capabilities = ''
           capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
           capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -51,5 +51,6 @@
 
     };
     lsp-lines.enable = true;
+    lspind.enable = true;
   };
 }

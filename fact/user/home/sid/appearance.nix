@@ -16,8 +16,4 @@
       name = "Tela Red Dark";
     };
   };
-
-  services.polybar = {
-    enable = true;
-  };
 }

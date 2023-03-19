@@ -28,18 +28,16 @@
           modes = [ "i" "s" ];
           action = ''
             function(fallback)
-              unpack = unpack or table.unpack
-              local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-              local has_words_before = (col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil)
-
               if cmp.visible() then
                 cmp.select_next_item()
               elseif luasnip.expandable() then
                 luasnip.expand()
-              elseif has_words_before then
-                cmp.complete()
+              elseif luasnip.expand_or_jumpable() then
+                luasnip.expand_or_jump()
+              elseif check_backspace() then
+                fallback()
               else
-                fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+                fallback()
               end
             end
           '';
@@ -100,13 +98,15 @@
 
   programs.nixvim.autoCmd = [
     {
-      event = ["BufRead"];
-      pattern = ["Cargo.toml"];
-      callback = { __raw = ''
-        function()
-          require("cmp").setup.buffer({ sources = {{name = "crates"}} })
-        end
-      ''; };
+      event = [ "BufRead" ];
+      pattern = [ "Cargo.toml" ];
+      callback = {
+        __raw = ''
+          function()
+            require("cmp").setup.buffer({ sources = {{name = "crates"}} })
+          end
+        '';
+      };
     }
   ];
 }

@@ -53,7 +53,6 @@
         latex
         llvm
         lua
-        nu
         make
         markdown
         markdown_inline

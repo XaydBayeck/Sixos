@@ -39,7 +39,6 @@ local mappings = {
     name = "open",
     t = { ":NvimTreeToggle<CR>", "Open files manager" },
   },
-  r = { ":Telescope live_grep<CR>", "Telescope Live Grep" },
   g = { '<Plug>(lsp-previous-diagnotics)<CR>', 'Show line diagnostics' },
   l = {
     name = "LSP",

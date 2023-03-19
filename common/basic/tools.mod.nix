@@ -12,6 +12,8 @@
     gparted 
   ];
 
+  programs.dconf.enable = true;
+
   # clipboard manager aim to use with rofi
   services.greenclip.enable = true;
 }

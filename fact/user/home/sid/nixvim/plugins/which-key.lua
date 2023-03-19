@@ -74,11 +74,11 @@ local hopmotion = {
   l = {
     function () hop.hint_lines {direction = directions.AFTER_CURSOR } end,
     "Fin {line} after cursor"
-  }
+  },
   L = {
     function () hop.hint_lines {direction = directions.BEFORE_CURSOR } end,
     "Fin {line} before cursor"
-  }
+  },
 }
 
 wk.register(hopmotion, { prefix = "s", noremap = true, silent = true })

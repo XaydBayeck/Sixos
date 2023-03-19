@@ -25,17 +25,17 @@ local mappings = {
     b = { ":Telescope buffers<CR>", "Telescope Buffers" },
     h = { ":Telescope help_tags<CR>", "Neovim help tags" },
     g = { 
-      name = "Telescope git"
+      name = "Telescope git",
       f = { ":Telescope git_files<CR>", "Files" },
       c = { ":Telescope git_commits<CR>", "Commits" },
       b = { ":Telescope git_branches<CR>", "Branches" },
       s = { ":Telescope git_status<CR>", "Status" },
     },
-    s = { ":w<CR>", "Save" }
+    s = { ":w<CR>", "Save" },
   },
   o = {
     name = "open",
-    t = { ":NvimTreeToggle<CR>", "Open files manager" }
+    t = { ":NvimTreeToggle<CR>", "Open files manager" },
   },
   r = { ":Telescope live_grep<CR>", "Telescope Live Grep" },
   g = { '<Plug>(lsp-previous-diagnotics)<CR>', 'Show line diagnostics' },
@@ -43,11 +43,6 @@ local mappings = {
     name = "LSP",
     i = { ":LspInfo<cr>", "Connected Language Servers" },
   },
-  -- y = {
-  --   name = "youdao cloud dictionary",
-  --   d = { ":<C-u>Yde<CR>", "input words to translate" },
-  --   o = { ":<C-u>Ydc<CR>", "translate words at your point" }
-  -- }
 }
 wk.register(mappings, { prefix = "<leader>", noremap = true, silent = true })
 

@@ -93,9 +93,9 @@
       # always show tabline
       showtabline = 2;
       # enable fold
-      # foldmethod = "expr";
-      # foldexpr = "nvim_treesitter#foldexpr()";
-      # foldlevelstart = 99;
+      foldmethod = "expr";
+      foldexpr = "nvim_treesitter#foldexpr()";
+      foldlevelstart = 99;
     };
   };
 }

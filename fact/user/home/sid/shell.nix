@@ -2,6 +2,31 @@
 
 {
   programs = {
+    fish = {
+      enable = true;
+      plugins = with pkgs.fishPlugins; [ 
+        {
+          name = "grc";
+          src = grc.src;
+        }
+        {
+          name = "bass";
+          src = bass.src;
+        }
+        {
+          name = "puffer";
+          src = puffer.src;
+        }
+        {
+          name = "pisces";
+          src = pisces.src;
+        }
+        {
+          name = "forgit";
+          src = forgit.src;
+        }
+      ];
+    };
     bat = {
       enable = true;
       extraPackages = with pkgs.bat-extras; [ 
@@ -39,6 +64,12 @@
       delta.enable = true;
       userEmail = "SydBayeck@outlook.com";
       userName = "Sid";
+    };
+    direnv = {
+      enable = true;
+      enableFishIntegration = true;
+      enableNushellIntegration = true;
+      nix-direnv.enable = true;
     };
   };
 }

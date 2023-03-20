@@ -5,7 +5,7 @@
     nordzy-cursor-theme
     plata-theme
     tela-icon-theme
-  ] + [ sinur-pkgs.fcitx5-nord ];
+  ] ++ [ sinur-pkgs.fcitx5-nord ];
 
   gtk = with pkgs; {
     enable = true;

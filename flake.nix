@@ -15,11 +15,14 @@
     # config neovim by nix
     nixvim.url = "github:pta2002/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    sinur.url = "github:XaydBayeck/Sinur";
+    sinur.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils, wired, nixvim, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, sinur, ... }@inputs:
     let system = "x86_64-linux"; in
     let pkgs = nixpkgs.legacyPackages.${system}; in
+    let sinur-pkgs = sinur.packages.${system}; in
     let lib = nixpkgs.lib; in
     let subDirs = (path: with builtins; let d = readDir path; in filter (k: d.${k} == "directory") (attrNames d)); in
     let for'' = ks: f: with builtins; foldl' (a: b: a // b) { } (map f ks); in
@@ -49,7 +52,7 @@
                   home-manager.useGlobalPkgs = true;
                   home-manager.useUserPackages = true;
 
-                  home-manager.extraSpecialArgs = inputs // { inherit system; };
+                  home-manager.extraSpecialArgs = inputs // { inherit system; sinur-pkgs = sinur-pkgs; };
                 }
               ];
             };

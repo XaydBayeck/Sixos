@@ -6,10 +6,10 @@
     fish = {
       enable = true;
       plugins = with pkgs.fishPlugins; [ 
-        {
-          name = "grc";
-          src = grc.src;
-        }
+        # {
+        #   name = "grc";
+        #   src = grc.src;
+        # }
         {
           name = "bass";
           src = bass.src;
@@ -27,6 +27,12 @@
           src = forgit.src;
         }
       ];
+    };
+    exa = {
+      enable = true;
+      enableAlias = true;
+      git = true;
+      icon = true;
     };
     bat = {
       enable = true;

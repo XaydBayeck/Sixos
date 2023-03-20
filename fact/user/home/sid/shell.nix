@@ -30,7 +30,7 @@
     };
     exa = {
       enable = true;
-      enableAlias = true;
+      enableAliases = true;
       git = true;
       icon = true;
     };

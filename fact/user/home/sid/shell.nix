@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  home.packages = with pkgs; [ sqlite ];
   programs = {
     fish = {
       enable = true;

@@ -32,7 +32,7 @@
       enable = true;
       enableAliases = true;
       git = true;
-      icon = true;
+      icons = true;
     };
     bat = {
       enable = true;

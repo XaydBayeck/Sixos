@@ -32,6 +32,7 @@
       overlays = [
         # (import ./overlays/packages.nix)
         (import ./overlays/teaks.nix)
+        (self: super: {sinur = sinur-pkgs;})
       ];
 
       nixosConfigurations =
@@ -52,7 +53,7 @@
                   home-manager.useGlobalPkgs = true;
                   home-manager.useUserPackages = true;
 
-                  home-manager.extraSpecialArgs = inputs // { inherit system; sinur-pkgs = sinur-pkgs; };
+                  home-manager.extraSpecialArgs = inputs // { inherit system; };
                 }
               ];
             };

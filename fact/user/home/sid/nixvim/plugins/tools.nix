@@ -6,6 +6,11 @@
       rainbow_parentheses-vim
     ];
     plugins = {
+      # markdown-preview
+      markdown-preview = {
+        enable = true;
+        browser = "firefox";
+      };
       # file manager
       nvim-tree = {
         enable = true;

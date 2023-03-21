@@ -12,5 +12,6 @@
     vimix-icon-theme
     vimix-gtk-themes
     nordzy-cursor-theme
+    sinur.fcitx5-nord
   ];
 }

@@ -5,6 +5,7 @@
     nordzy-cursor-theme
     plata-theme
     tela-icon-theme
+    sinur.fcitx5-nord
   ];
 
   gtk = with pkgs; {

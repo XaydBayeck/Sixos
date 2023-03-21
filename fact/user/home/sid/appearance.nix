@@ -1,11 +1,12 @@
-{ config, lib, pkgs, sinur-pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
     nordzy-cursor-theme
     plata-theme
     tela-icon-theme
-  ] ++ [ sinur-pkgs.fcitx5-nord ];
+    sinur.fcitx5-nord
+  ];
 
   gtk = with pkgs; {
     enable = true;

@@ -8,5 +8,7 @@
     ./appearance.nix
     ./graphics.nix
     ./shell.nix
+    ./media.nix
+    ./diveces.nix
   ];
 }

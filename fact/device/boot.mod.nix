@@ -19,5 +19,5 @@
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
-  boot.supportedFilesystems = [ "exfat" ];
+  boot.supportedFilesystems = [ "exfat" "ntfs" ];
 }

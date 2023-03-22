@@ -5,7 +5,7 @@
   users.users.sid = {
     isNormalUser = true;
     description = "sid";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     # packages = with pkgs; [ ];
     shell = pkgs.fish;
   };

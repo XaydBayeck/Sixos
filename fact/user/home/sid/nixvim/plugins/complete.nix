@@ -111,6 +111,7 @@
         __raw = ''
           function()
             require("cmp").setup.buffer({ sources = {{name = "crates"}} })
+            require('crates').show()
           end
         '';
       };

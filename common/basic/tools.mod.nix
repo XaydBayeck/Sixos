@@ -10,6 +10,7 @@
     xorg.xmodmap   # setting and query your modifier keys
     pcmanfm # powerful file manager
     gparted 
+    usbutils
   ];
 
   programs.dconf.enable = true;

@@ -110,7 +110,9 @@
       callback = {
         __raw = ''
           function()
+            require("crates").setup()
             require("cmp").setup.buffer({ sources = {{name = "crates"}} })
+            require("crates").show()
           end
         '';
       };

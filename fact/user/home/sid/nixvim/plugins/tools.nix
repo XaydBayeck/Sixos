@@ -3,7 +3,8 @@
 {
   programs.nixvim = {
     extraPlugins = with pkgs.vimPlugins; [
-      rainbow_parentheses-vim
+      nvim-ts-rainbow2
+      vim-illuminate
     ];
     plugins = {
       # markdown-preview

@@ -1,6 +1,5 @@
 -- nvim-nu settings
 require("nu").setup()
-require("illuminate").setup()
 require("nvim-treesitter.configs").setup {
   rainvow = {
     enable = true,
